@@ -1,0 +1,34 @@
+
+#cableInventory ul li.powerCable,.cableCategories ul li.powerCable { background-image: url('../images/icons/powerCable.png'); background-repeat: no-repeat; background-position: 5px 1px;}
+#cableInventory ul li.dataCable,.cableCategories ul li.dataCable { background-image: url('../images/icons/dataCable.png'); background-repeat: no-repeat; background-position: 5px 1px;}
+.cableCategories ul li div.name { width: 105px; } /* Used to align the delete link instead of floating (DAMN IE)*/
+.cableCategories ul li span.delete { background: url('../images/icons/close_rack.gif') no-repeat; width: 10px; display:inline-block; height: 20px; } /* Used to align the delete link instead of floating (DAMN IE)*/
+
+.cableCategories div#createNewCategory { text-align: center; line-height: 125px; }
+.cableCategories div#createNewCategory:hover { background-color: #d2fece; border-color: #888888; }
+#cableInventory ul li#addNewCableType {
+    background: #f2f2f2 url('../images/icons/list_add_small.png') no-repeat 5px 1px;
+    color: #333333;
+}
+#cableInventory ul li#addNewCableType:hover { background-color: #d2fece; }
+
+#cableInventory {
+    width: 97%;
+    border: 1px solid #cccccc;
+    height: 100px;
+}
+
+#cableInventory ul li { display: inline-block; float:left; margin-left: 10px; }
+#cableInventory ul li#addNewCableID { font-weight: bold; }
+
+.cableCategories { overflow: auto; }
+.cableCategories div {
+    width: 150px;
+    height: auto;
+    float:left;
+}
+.cableCategories div.acceptingCable { background-color: #d2fece; }
+
+.cableCategories div strong { font-weight: bold; font-size: 8pt; color: #000000; }
+.cableCategories ul { list-style-type: none; padding-left: 0px; margin: 5px 0px 0px 0px; }
+#cableInventory ul { list-style-type: none; padding-left: 0px; margin: 0px; }

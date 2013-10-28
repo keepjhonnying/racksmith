@@ -1,0 +1,2 @@
+When upgrading from an earlier build (build 158 or earlier), please perform the following query
+ALTER TABLE  `devices` ADD  `orientation` VARCHAR( 50 ) NOT NULL AFTER  `position` 

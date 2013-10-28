@@ -1,0 +1,76 @@
+Racksmith 
+============================
+
+Copyright (c) 2011
+Daniel Gleeson, Josh Peters
+All rights reserved.
+
+
+Donations
+============================
+
+As RackSmith progresses closer to the 1.0 release, it takes up a lot more of our time.
+Currently there are only two developers working on our spare time, we cover the hosting and support costs out of our own pocket.
+
+If your business finds RackSmith useful, would like to see it developed further or just wants to help us out all support is greatly aappreciated.
+This could be in the form of testing, documentation, code contributions, donations and much more
+http://www.racksmith.net/support-rs/
+
+
+
+Installation Instructions
+============================
+
+This release of RackSmith requires a PHP installation with PDO available. 
+The 1.0RC1 is currently only tested with a mySQL backend however a wider range of DBs will be supported in future release.
+
+	1) Upload files to your webtree
+	
+	2) Rename class/config-blank.inc.php to class/config.inc.php and allow the web user to write to this file
+	
+	3) Browse to the install.php and follow all instructions
+	
+	4) Once installed remove the write permissions on the config.inc.php file
+
+More detailed instructions may be found online at
+http://help.racksmith.net/guide.php?guide=install
+
+
+
+
+Upgrade Instructions
+============================
+
+There is currently no upgrade script available as this development release isn't finalised.
+For unique upgrade instructions for this build please see UPGRADE.txt
+
+
+Further documentation may be found at
+http://help.racksmith.net/guide.php?guide=upgrade
+
+
+
+
+License information
+-------------------
+
+See the file "LICENSE" for information on our license & a DISCLAIMER OF ALL
+WARRANTIES.
+
+Support
+============================
+
+RackSmith is provided as is and without warranty,
+
+We are developing a knowledge base to help users with typical procedures within RackSmith
+http://help.racksmith.net
+
+For general enquiries and basic support you could also try posting on the forums.
+http://www.racksmith.net/forum/
+
+
+Known Bugs & limitations
+============================
+ - Slight interface inconsistencies within internet explorer
+ - The interface to manage network ports is buggy and should be assumed non-existant for this release.
+ - the file upload interfaces are incomplete

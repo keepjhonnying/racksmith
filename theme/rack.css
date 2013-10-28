@@ -1,0 +1,272 @@
+/* these items cannot be positioned relative as it breaks in IE8 compatability mode */
+.rack .drag {
+	position: relative;
+	background-color: #828487;
+	cursor: move;
+	text-align: center;
+	color: #AAA;
+	}
+
+.drop, .undroppable, .rack .drag, .ghost { height: 14px; font-size: 12px; width: 217px; }
+
+	
+/* Rack Unit sizing determined by gencss.php */
+.rack .r1 { height: 14px; } 
+.rack .r2 { height: 29px; } 
+.rack .r3 { height: 44px; } 
+.rack .r4 { height: 59px; } 
+.rack .r5 { height: 74px; } 
+.rack .r6 { height: 89px; } 
+.rack .r7 { height: 104px; } 
+.rack .r8 { height: 119px; } 
+.rack .r9 { height: 134px; } 
+.rack .r10 { height: 149px; } 
+.rack .r11 { height: 164px; } 
+.rack .r12 { height: 179px; } 
+.rack .r13 { height: 194px; } 
+.rack .r14 { height: 209px; } 
+.rack .r15 { height: 224px; } 
+.rack .r16 { height: 239px; } 
+.rack .r17 { height: 254px; } 
+.rack .r18 { height: 269px; } 
+.rack .r19 { height: 284px; } 
+.rack .r20 { height: 299px; } 
+.rack .r21 { height: 314px; } 
+.rack .r22 { height: 329px; } 
+.rack .r23 { height: 344px; } 
+.rack .r24 { height: 359px; } 
+.rack .r25 { height: 374px; } 
+.rack .r26 { height: 389px; } 
+.rack .r27 { height: 404px; } 
+.rack .r28 { height: 419px; } 
+.rack .r29 { height: 434px; } 
+.rack .r30 { height: 449px; } 
+.rack .r31 { height: 464px; } 
+.rack .r32 { height: 479px; } 
+.rack .r33 { height: 494px; } 
+.rack .r34 { height: 509px; } 
+.rack .r35 { height: 524px; } 
+.rack .r36 { height: 539px; } 
+.rack .r37 { height: 554px; } 
+.rack .r38 { height: 569px; } 
+.rack .r39 { height: 584px; } 
+.rack .r40 { height: 599px; } 
+.rack .r41 { height: 614px; } 
+.rack .r42 { height: 629px; } 
+.rack .r43 { height: 644px; } 
+.rack .r44 { height: 659px; } 
+.rack .r45 { height: 674px; } 
+.rack .r46 { height: 689px; } 
+.rack .r47 { height: 704px; } 
+.rack .r48 { height: 719px; } 
+
+
+.drop {
+	border: 1px solid #5a5a5a;
+        
+	border-left: 0px;
+	border-bottom: 0px;
+	background: #CCC;
+	margin-bottom: 0px;
+    }
+	
+
+.ghost {
+	position: absolute;
+	filter:alpha(opacity=10);
+	-moz-opacity: 0.1;
+	opacity: 0.1;
+	background-color: #8091a6;
+	border: 1px solid #000000;
+	color: #AAD;
+}
+	
+
+	
+.outline {
+	background-color: #dbdbdb;
+	border: 1px dashed #aaaaaa;
+	color: #ffffff;
+	}
+.active { background-color: #8091a6; }
+
+#rackPanel { display: block; overflow: auto; overflow-y: auto; overflow-x: auto; padding: 0px 0px 10px 05px; } /* The panel which all racks appear in */
+
+/* The visual style for a rack */
+.room .rackHolder {  background: url('../images/rackBG.gif'); width: 284px; }
+.room .backView .rackHolder {  background: url('../images/rackBG_back2.gif'); width: 284px; }
+.room .rackBase { width: 285px; height: 20px; background: url('../images/rackBase.gif'); }
+.room .rackTop { width: 285px; height: 12px; background: url('../images/rackTop.gif'); }
+.room .backView .rackBase { width: 285px; height: 20px; background: url('../images/rackBase_back.gif'); }
+.room .backView .rackTop { width: 285px; height: 12px; background: url('../images/rackTop_back.gif'); }
+.room .rackTitle {  width: 233px; border: 1px solid #ffba00; color: #ffffff;  wrap: both; padding: 0px; background-color: #2b2b2b; }
+.room .rackTitle .edit { float:left; margin: 2px 2px; background: url('../images/icons/config_small_bw.png') no-repeat; width: 20px; height: 10px; }
+.room .rackTitle .rotate { float:left; margin: 2px 2px; background: url('../images/icons/switch_view.png') no-repeat; width: 20px; height: 10px; }
+.room .rackTitle .close { float:right; padding: 2px 4px 0px 0px; }
+
+/* the visual style for a cabinet */
+.cabinet .rackHolder {  background: url('../images/cabinet_bg.png'); width: 284px; }
+.cabinet .rackTop { width: 285px; height: 20px; background: url('../images/cabinet_top.png'); }
+.cabinet .rackBase { width: 285px; height: 18px; background: url('../images/cabinet_top.png'); }
+.cabinet .rackTitle {  width: 233px; border: 1px solid #ffba00; color: #ffffff;  wrap: both; padding: 0px; background-color: #6e7678; }
+.cabinet .rackTitle .edit { float:left; margin: 2px 2px; background: url('../images/icons/config_small_bw.png') no-repeat; width: 20px; height: 10px; }
+.cabinet .rackTitle .rotate { float:left; margin: 2px 2px; background: url('../images/icons/switch_view.png') no-repeat; width: 20px; height: 10px; }
+.cabinet .rackTitle .close { float:right; padding: 2px 4px 0px 0px; }
+
+
+
+
+.racktbl {  width: 250px; color: #ffffff; margin: 00px 0px 0 10px; wrap: both; padding: 0px; margin-left: 25px; border: 0px; }
+.rackID { font-size: 8pt; height: 14px; border: 1px solid #5a5a5a; border-width: 1px 2px 0px 0px; background-color: #bbbbbb; text-align: center; width: 14px; padding: 0px; margin: 0px; color: #5f5f5f;}
+
+
+.rackContent { width: 200px; }
+.highlighted_rack { color: green; list-style-image: url('../images/icons/close_module.gif'); }
+
+#rackDeviceList { padding: 1px; }
+
+
+#createRackForm .error { color: #d02a2a; }
+
+li.patchMenu {  background: url('../images/patch_title_bg.gif'); color: #d13e3f; }
+
+.minimapSelectedView { font-weight: bold; }
+li.popupBuildingListing, li.popupFloorListing, li.popupPortListing, li.popupDeviceListing { padding: 1px 3px; border-bottom: 1px solid #000; cursor:pointer; }
+
+ul.popupList { padding:0; margin:0; background-color:#EEE; list-style-type: none; }
+
+
+#closeLink { text-align: center; fload:right;}
+#closeLink:hover { color: red; background-color: #ffffff; }
+
+#manageConnection {
+    color: #000000;
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    border-width: 0px 1px 1px 0px;
+    height: 250px;
+    padding: 4px;
+}
+
+
+/* Key in the device popup section explaining color scheme of ports */
+.portKey { 
+    line-height: 10pt;
+    margin: 10px; 
+    font-size: 8pt; 
+    font-style:italic; 
+    height: 60px;
+}
+.portKey div.box {
+    display: inline-table;
+    width: 10px; height: 10px;
+    border: 1px solid #000000;
+    margin: 3px 2px 0px 10px; 
+}
+
+.portKey .singlePort { color: #9a928e; }
+.portKey .singlePort div.box { background-color: #9a928e; }
+.portKey .connected { color: #3da682; }
+.portKey .connected div.box { background-color: #3da682; }
+
+
+
+
+.devicePortSummary,.devicePortSummary#hoverMenu {
+    font-size: 8pt;
+    font-family: verdana;
+    font-weight: normal;
+    color: #858857;
+    font-style: italic;
+    padding: 2px 10px;
+    border-top:0px;
+}
+
+/* Devices */
+.ports, .patches {
+    border: solid #ffba00;
+    border-top-width: 0px;
+    background: #383c42  url('../images/icons/patchpanel_bg.png');
+    color: #cccccc;
+    padding: 0px;
+    display: block;
+
+}
+
+
+ul.ports, ul.patches {
+	height: auto;
+	margin: 0px;
+	background: #383c42  url('../images/icons/patchpanel_bg.png');
+        padding-bottom: 6px;
+        border: 1px solid #ffba00;
+}
+ul.ports em, ul.patches em { font-size: 8pt; }
+
+ul.fourWide { width: 298px; }
+ul.eightWide { width: 345px; }
+ul.fiveWide { width: 345px; }
+ul.ports li,ul.patches li { list-style-type: none; display: inline-block; width: 19px; height: 23px;}
+ul.ports li.split,ul.patches li.split { list-style-type: none; display: inline-block; width: 19px; height: 3px;}
+ul.ports li a,ul.patches li a {
+        display: block;
+	width: 19px;
+	height: 23px;
+	background: #2d2c31 url('../images/icons/patch_port.png'); 
+	text-align: center; 
+	color: #ffffff;
+	font-size: 6pt;
+	padding: 6px 0px 0px 1px;
+	cursor: pointer;
+}
+/* styles applied to the ports within the minimap */
+.device ul li.selected a { background-color: #8b9cb1; }
+.device ul li a.disconnected { }
+.device ul li a.connected { background-color: #3da682; }
+.device ul li a.singleconnected { background-color: #9a928e; }
+.device ul li a.disconnected:hover { background-color: #5e5d63; }
+.device ul li a.alert { background-color: #c82727;}
+
+.device ul li.selectedPort a { background: url('../images/icons/patch_port_selected.png'); }
+ul .li.connected { background-color: #3da682;  }
+
+/* List of joins in the popup menu when making a connection */
+ul.popupList li.singleconnected { background-color: #9a928e; }
+ul.popupList li.connected { background-color: #3da682; }
+
+
+/* The menu to change between the front/back of a patch panel */
+.patchToggle { width: 100%; }
+.patchToggle thead tr th { padding:0px; text-align:center; font-size:7pt; color: #ffffff; text-align: center;}
+.patchToggle thead tr th a { color: #cccccc; font-size: 8pt; }
+.patchToggle thead tr th a:hover { color: #ffffff; }
+.patchToggle thead tr th a.selectedView { color: #ffffff; }
+
+.popupComp { background-color: #e0ecf1; border: 1px dashed #cccccc; padding: 3px; padding-left: 20px; }
+.barcodeEntry { background-color: #f2f2f2; border: 1px dashed #cccccc; border-top: 0px; padding: 3px; padding-left: 20px; }
+
+.inventorySearch { font-size: 8pt; }
+.inventorySearch input { margin-left: 2px; font-size: 8pt; }
+
+
+
+/* minimap navigation styles */
+#navigation { position:absolute; }
+#navigation #currentArea { font-size: 8pt; margin-bottom: 2px;}
+#navigation #navigate { font-size: 8pt; }
+
+#cableConnectionMenu { float:right;}
+
+#displayArea { margin:0px; background-repeat:no-repeat; width:300px; display:block; height: 250px; overflow:auto; }
+#displayPortal { display:block; width:315px;  height:250px; border: 1px solid #000000; border-top: 0px; padding: 2px; }
+#displayArea.room { margin:0; background-image:none !important;}
+
+#viewPortal,#miniList { margin:0px; background-repeat:no-repeat; width:325px; display:block; height:290px; }
+#miniList { text-align:left; overflow:auto;}
+#miniMap.room { margin:0; background-image:none !important;}
+#mapSpacer { display:block; width:330px; height:320px;}
+.floors li, .floors { list-style-type:none;}
+.cabletray { display:none;}
+
+
+#inventoryHolder.racksInventory div.inventory { height: 120px; }

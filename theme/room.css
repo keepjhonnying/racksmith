@@ -1,0 +1,48 @@
+.floortile1 { z-index:100; background-position:top left; background-image:url('../images/tiles/floortile2.gif');}
+.floortile2 { z-index:102; background-position:top left; background-image:url('../images/tiles/floortile3.gif');}
+.floortile3 { z-index:103; background-position:top left; background-image:url('../images/tiles/concrete.gif');}
+.floortile4 { z-index:104; background-position:top left; background-image:url('../images/tiles/power1.jpg');}
+.floortile5 { z-index:105; background-position:top left; background-image:url('../images/tiles/admin1.jpg');}
+
+.floortile1.small { background-image:url('../images/tiles/floortile2_small.gif');}
+.floortile2.small { background-image:url('../images/tiles/floortile3_small.gif');}
+.floortile3.small { background-image:url('../images/tiles/concrete_small.gif');}
+.floortile4.small { background-image:url('../images/tiles/power1_small.jpg');}
+.floortile5.small { background-image:url('../images/tiles/admin1_small.jpg');}
+
+.rack1 {text-align:left; display:block; width:32px; height:32px; z-index:105; background-position:top left; background-image:url('../images/tiles/rack01.gif');}
+.rack1.selected { background-image:url('../images/tiles/rack01_selected.gif'); }
+.rack1.small {text-align:left; display:block; width:16px; height:16px; z-index:105; background-position:top left; background-image:url('../images/tiles/rack01_small.gif');}
+.rack1.small.selected { background-image:url('../images/tiles/rack01_small_selected.gif'); }
+.device.small { background-color: #000000; background: #cccccc url('../images/tiles/device_map_small.png') no-repeat center center; }
+.rack1 span, .device span { display: none; }
+.layoutItem.device {text-align:left; display:block; width:32px; height:32px; z-index:105;  background: #cccccc url('../images/tiles/device_map.png') no-repeat center center;}
+
+.cabletray { z-index:110; }
+.inventory .cabletray { z-index:110; width: 15px; height: 32px;}
+.cabletray1,#cabletray1 { background-color: #F00; }
+.cabletray2,#cabletray2 { background-color:#FC0; }
+.cabletray3,#cabletray3 { background-color:#CCC; }
+
+
+.toolbaritem.floortile { width: 32px; height: 32px; }
+.hotAisle { background-color: red;}
+.coldAisle { background-color: blue; }
+#viewPortal .coldAisle, #viewPortal .hotAisle { opacity: 0.3; filter: alpha(opacity=30); }
+
+
+.deletable { text-align:right;}
+
+.metaData tr td{ font-size: 8pt; }
+
+/* .stock .drag, .inventoryItem, .inventorySearch, .inventoryAdd { background-color: #e9e9e9; border: 1px solid #515151; border-top-width: 0px; padding: 2px 6px; font-weight: bold; font-size: 10pt;}
+.inventoryAdd, .inventoryAdd a { color: #6f6f6f; text-align: right;}
+.inventoryItem:hover {background-color: #ffba00; color: #d13e3f; }
+*/
+
+
+.inventoryHolder.roomInventory div.inventory td { font-size: 6pt; text-align: center; }
+.inventoryHolder.roomInventory div.inventory td div { margin: 0px auto;}
+.inventoryHolder.roomInventory div.inventory td img { margin: 0px auto;}
+
+.roomInventory td { text-align: center; }

@@ -1,0 +1,24 @@
+6th October 2011
+ALTER TABLE  `devices` ADD  `orientation` VARCHAR( 50 ) NOT NULL AFTER  `position` 
+
+
+June 2011
+- adjusted DB default ID values for
+       500 - attrnames
+       500 - attrcategories
+       500 - attrcategoryvalues
+       1000 -  attrvalues
+       1000 -  attroptionvalues
+       100  -  cabletypes
+       100  -  cablecategories
+
+This means in future we have a set range for defaults in new releases.
+
+
+fix for joins and basic attr work, 
+ALTER TABLE  `attrvalues` ADD INDEX (  `parentid` )
+ALTER TABLE  `attrcategoryvalues` ADD INDEX (  `parentID` )
+
+
+
+
