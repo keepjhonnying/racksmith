@@ -1,5 +1,11 @@
 $(document).ready(function ()
  {
+
+    $('#logo').sidr({
+      name: 'sidr-main',
+      source: '#menu'
+    });
+
     $('.defaultDOMWindow').openDOMWindow({
         eventType:'click',
         width:'750',

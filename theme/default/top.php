@@ -6,11 +6,14 @@
 	<link rel='stylesheet' type='text/css' href='theme/main.css' />
 	<link rel='stylesheet' type='text/css' href='theme/customTemplates.css.php' />
 	<link rel='stylesheet' type="text/css" href="theme/ui.all.css" /> 
-	<script type="text/javascript" src="theme/jquery-1.4.2.min.js"></script> 
+	<script type="text/javascript" src="theme/jquery-1.4.2.min.js"></script>
+	<script type="text/javascript" src="theme/jquery.sidr.min.js"></script>
+	<link rel='stylesheet' type='text/css' href='theme/stylesheets/jquery.sidr.dark.css' />
+
 
 	<script type="text/javascript" src="theme/common.js"></script> 
 	<script type="text/javascript" src="theme/template.js"></script> 
-	<script type="text/javascript" src="theme/js/rotate.js"></script> 
+	<script type="text/javascript" src="theme/js/rotate.js"></script>
 	
 
 	<!-- Jquery UI items should be bundled together -->

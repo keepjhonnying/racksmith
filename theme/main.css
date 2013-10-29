@@ -18,7 +18,7 @@ h5 { margin: .5em 0px; color: #4D4D4B; }
 #header #logo 	{ margin:5px 5px 5px 15px; }
 #header #logo a { float:left; display:block; width: 152px; height: 43px; background:url('../images/logo.gif') no-repeat; }
 #header #logo a span { display: none; }
-#header #menu { float:right; margin: 5px 15px 0px; background-color: #000000;}
+#header #menu { display: none; float:right; margin: 5px 15px 0px; background-color: #000000;}
 #header #menu ul { margin: 0; padding: 0; float: left; 	list-style-type: none; 	}
 #header #menu li {
 	float: left;
